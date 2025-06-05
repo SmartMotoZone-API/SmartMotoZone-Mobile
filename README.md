@@ -1,5 +1,9 @@
 # SmartMotoZone-Mobile
 
+- Kaio Cumpian Silva - RM99816
+- Gabriel Yuji Suzuki - RM556588
+- Lucas Felix Vassiliades - RM97677
+
 # Primeiramente, iremos clonar o projeto e depois abrir o terminal no cmd ou no vs code, e iremos digitar em ordem:
 
 - cd [caminho do projeto clonado]
