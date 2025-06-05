@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useState } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function EditarZonaScreen() {
   const { id, modelo, zona } = useLocalSearchParams();
@@ -36,11 +36,5 @@ export default function EditarZonaScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 20 },
   title: { fontSize: 22, marginBottom: 20 },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    padding: 10,
-    width: '100%',
-    marginBottom: 10,
-  },
+  input: { borderWidth: 1, borderColor: '#ccc', padding: 10, width: '100%', marginBottom: 10 },
 });

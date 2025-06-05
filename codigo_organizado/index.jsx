@@ -1,14 +1,16 @@
 import { View, Text, Button, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router';
+import { Link } from 'expo-router';
 
 export default function HomeScreen() {
-  const router = useRouter();
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bem-vindo à Mottu</Text>
-      <Button title="Mapa do Pátio" onPress={() => router.push('/mapa')} />
-      <Button title="Configurações" onPress={() => router.push('/configuracoes')} />
+      <Link href="/mapa">
+        <Button title="Mapa do Pátio" />
+      </Link>
+      <Link href="/configuracoes">
+        <Button title="Configurações" />
+      </Link>
     </View>
   );
 }

@@ -12,7 +12,7 @@ export default function MotoDetailScreen() {
       <Text>Modelo: {modelo}</Text>
       <Text>Status: {status}</Text>
       <Text>Zona Atual: {zona}</Text>
-      <Button title="Editar Zona" onPress={() => router.push({ pathname: '/editar-zona', params: { id, modelo, zona } })} />
+      <Button title="Editar Zona" onPress={() => router.push({ pathname: '/editar', params: { id, modelo, status, zona } })} />
     </View>
   );
 }

@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function ConfiguracoesScreen() {

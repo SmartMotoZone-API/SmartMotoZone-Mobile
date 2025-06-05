@@ -19,7 +19,7 @@ export default function MapaPátioScreen() {
         renderItem={({ item }) => (
           <View style={styles.motoCard}>
             <Text>{item.modelo} - Zona: {item.zona}</Text>
-            <Button title="Detalhes" onPress={() => router.push({ pathname: '/detalhes', params: { ...item } })} />
+            <Button title="Detalhes" onPress={() => router.push({ pathname: '/detalhes', params: { id: item.id, modelo: item.modelo, status: item.status, zona: item.zona } })} />
           </View>
         )}
       />
@@ -30,11 +30,5 @@ export default function MapaPátioScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 20 },
   title: { fontSize: 22, marginBottom: 20, textAlign: 'center' },
-  motoCard: {
-    padding: 10,
-    borderWidth: 1,
-    borderColor: '#999',
-    borderRadius: 8,
-    marginVertical: 5,
-  },
+  motoCard: { padding: 10, borderWidth: 1, borderColor: '#999', borderRadius: 8, marginVertical: 5 },
 });
